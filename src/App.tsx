@@ -507,13 +507,13 @@ function App() {
                     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
                   }}
                   onFocus={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLSelectElement;
                     target.style.borderColor = '#3b82f6';
                     target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
                     target.style.transform = 'translateY(-2px)';
                   }}
                   onBlur={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLSelectElement;
                     target.style.borderColor = '#e5e7eb';
                     target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
                     target.style.transform = 'translateY(0)';
@@ -554,13 +554,13 @@ function App() {
                     resize: 'vertical'
                   }}
                   onFocus={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLTextAreaElement;
                     target.style.borderColor = '#3b82f6';
                     target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
                     target.style.transform = 'translateY(-2px)';
                   }}
                   onBlur={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLTextAreaElement;
                     target.style.borderColor = '#e5e7eb';
                     target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
                     target.style.transform = 'translateY(0)';
@@ -593,13 +593,13 @@ function App() {
                     resize: 'vertical'
                   }}
                   onFocus={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLTextAreaElement;
                     target.style.borderColor = '#3b82f6';
                     target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
                     target.style.transform = 'translateY(-2px)';
                   }}
                   onBlur={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLTextAreaElement;
                     target.style.borderColor = '#e5e7eb';
                     target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
                     target.style.transform = 'translateY(0)';
@@ -628,13 +628,13 @@ function App() {
                     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
                   }}
                   onFocus={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLSelectElement;
                     target.style.borderColor = '#3b82f6';
                     target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
                     target.style.transform = 'translateY(-2px)';
                   }}
                   onBlur={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLSelectElement;
                     target.style.borderColor = '#e5e7eb';
                     target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
                     target.style.transform = 'translateY(0)';
@@ -682,13 +682,13 @@ function App() {
                     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
                   }}
                   onFocus={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLSelectElement;
                     target.style.borderColor = '#3b82f6';
                     target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
                     target.style.transform = 'translateY(-2px)';
                   }}
                   onBlur={(e) => {
-                    const target = e.target as HTMLInputElement;
+                    const target = e.target as HTMLSelectElement;
                     target.style.borderColor = '#e5e7eb';
                     target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
                     target.style.transform = 'translateY(0)';
@@ -793,14 +793,16 @@ function App() {
                       resize: 'vertical'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = '#3b82f6';
-                      e.target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
-                      e.target.style.transform = 'translateY(-2px)';
+                      const target = e.target as HTMLTextAreaElement;
+                      target.style.borderColor = '#3b82f6';
+                      target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
+                      target.style.transform = 'translateY(-2px)';
                     }}
                     onBlur={(e) => {
-                      e.target.style.borderColor = '#e5e7eb';
-                      e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
-                      e.target.style.transform = 'translateY(0)';
+                      const target = e.target as HTMLTextAreaElement;
+                      target.style.borderColor = '#e5e7eb';
+                      target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
+                      target.style.transform = 'translateY(0)';
                     }}
                   />
                 </div>
@@ -826,14 +828,16 @@ function App() {
                       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = '#3b82f6';
-                      e.target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
-                      e.target.style.transform = 'translateY(-2px)';
+                      const target = e.target as HTMLSelectElement;
+                      target.style.borderColor = '#3b82f6';
+                      target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
+                      target.style.transform = 'translateY(-2px)';
                     }}
                     onBlur={(e) => {
-                      e.target.style.borderColor = '#e5e7eb';
-                      e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
-                      e.target.style.transform = 'translateY(0)';
+                      const target = e.target as HTMLSelectElement;
+                      target.style.borderColor = '#e5e7eb';
+                      target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
+                      target.style.transform = 'translateY(0)';
                     }}
                   >
                     <option value="">Selecciona un tono</option>
@@ -1017,14 +1021,16 @@ function App() {
                       resize: 'vertical'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = '#3b82f6';
-                      e.target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
-                      e.target.style.transform = 'translateY(-2px)';
+                      const target = e.target as HTMLTextAreaElement;
+                      target.style.borderColor = '#3b82f6';
+                      target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
+                      target.style.transform = 'translateY(-2px)';
                     }}
                     onBlur={(e) => {
-                      e.target.style.borderColor = '#e5e7eb';
-                      e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
-                      e.target.style.transform = 'translateY(0)';
+                      const target = e.target as HTMLTextAreaElement;
+                      target.style.borderColor = '#e5e7eb';
+                      target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
+                      target.style.transform = 'translateY(0)';
                     }}
                   />
                   <p className="text-xs text-gray-500 mt-1">
@@ -1065,14 +1071,16 @@ function App() {
                       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = '#3b82f6';
-                      e.target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
-                      e.target.style.transform = 'translateY(-2px)';
+                      const target = e.target as HTMLSelectElement;
+                      target.style.borderColor = '#3b82f6';
+                      target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
+                      target.style.transform = 'translateY(-2px)';
                     }}
                     onBlur={(e) => {
-                      e.target.style.borderColor = '#e5e7eb';
-                      e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
-                      e.target.style.transform = 'translateY(0)';
+                      const target = e.target as HTMLSelectElement;
+                      target.style.borderColor = '#e5e7eb';
+                      target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
+                      target.style.transform = 'translateY(0)';
                     }}
                   >
                     <option value="">Selecciona una opción</option>
@@ -1109,14 +1117,16 @@ function App() {
                       resize: 'vertical'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = '#3b82f6';
-                      e.target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
-                      e.target.style.transform = 'translateY(-2px)';
+                      const target = e.target as HTMLTextAreaElement;
+                      target.style.borderColor = '#3b82f6';
+                      target.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
+                      target.style.transform = 'translateY(-2px)';
                     }}
                     onBlur={(e) => {
-                      e.target.style.borderColor = '#e5e7eb';
-                      e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
-                      e.target.style.transform = 'translateY(0)';
+                      const target = e.target as HTMLTextAreaElement;
+                      target.style.borderColor = '#e5e7eb';
+                      target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
+                      target.style.transform = 'translateY(0)';
                     }}
                   />
                 </div>
