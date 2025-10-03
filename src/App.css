@@ -1,0 +1,859 @@
+/* Importar tipografías premium de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@100..900&display=swap');
+
+/* Variables CSS para colores premium de Aterriza */
+:root {
+  /* Colores principales */
+  --lilac: #A78BFA;
+  --lilac-light: #C4B5FD;
+  --lilac-dark: #8B5CF6;
+  --pink: #F9A8D4;
+  --pink-light: #FBCFE8;
+  --pink-dark: #F472B6;
+  --mint: #86EFAC;
+  --mint-light: #A7F3D0;
+  --mint-dark: #6EE7B7;
+  --peach: #FED7AA;
+  --peach-light: #FFE4CC;
+  --peach-dark: #FDBA74;
+  
+  /* Gradientes premium */
+  --gradient-primary: linear-gradient(135deg, var(--lilac) 0%, var(--pink) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--pink) 0%, var(--mint) 100%);
+  --gradient-tertiary: linear-gradient(135deg, var(--mint) 0%, var(--lilac) 100%);
+  --gradient-bg: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 50%, #E2E8F0 100%);
+  
+  /* Sombras premium */
+  --shadow-soft: 0 4px 20px rgba(167, 139, 250, 0.15);
+  --shadow-medium: 0 8px 30px rgba(167, 139, 250, 0.2);
+  --shadow-strong: 0 20px 40px rgba(167, 139, 250, 0.25);
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-blur: blur(20px);
+}
+
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1F2937;
+  background: var(--gradient-bg);
+  overflow-x: hidden;
+}
+
+/* Tipografías premium */
+.font-serif {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Estilos adicionales para el formulario de consulta */
+
+/* Contenedor principal del formulario */
+.form-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    max-width: 760px;
+  }
+}
+
+/* Estilos para el header */
+.header-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.header-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  border: none;
+  background: none;
+}
+
+/* Asegurar que no haya elementos extra */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-logo {
+  width: 2rem;
+  height: 2rem;
+  background: linear-gradient(135deg, #A78BFA 0%, #F9A8D4 100%);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.header-logo span {
+  color: white;
+  font-weight: bold;
+  font-size: 0.875rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Estilos premium para el formulario */
+.form-section {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.form-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.form-section h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.form-section p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Campos del formulario más verticales */
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #A78BFA;
+  box-shadow: 0 0 0 1px #A78BFA;
+}
+
+/* Checkboxes más compactos */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.checkbox-item label {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+/* Botones premium mejorados */
+.btn-primary {
+  background: linear-gradient(135deg, #A78BFA 0%, #F9A8D4 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(167, 139, 250, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  color: #6b7280;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+  color: #374151;
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Animaciones suaves para las transiciones entre pasos */
+.form-step {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animaciones premium para elementos decorativos */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float:nth-child(2) {
+  animation-delay: -2s;
+}
+
+.animate-float:nth-child(3) {
+  animation-delay: -4s;
+}
+
+.animate-float:nth-child(4) {
+  animation-delay: -6s;
+}
+
+/* Animaciones de entrada premium */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Clases de animación */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out;
+}
+
+/* Animaciones de hover premium */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-strong);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(167, 139, 250, 0.3);
+}
+
+/* Animaciones de scroll */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efectos hover mejorados para los botones */
+.btn-primary {
+  background: linear-gradient(135deg, #A78BFA 0%, #F9A8D4 100%);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(167, 139, 250, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Efecto de ondas en los botones */
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Mejoras en los inputs */
+.form-input {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.form-input:focus {
+  border-color: #A78BFA;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.1);
+  transform: translateY(-1px);
+}
+
+.form-input:hover {
+  border-color: #A78BFA;
+}
+
+/* Estilos para los checkboxes personalizados */
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #A78BFA;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.custom-checkbox:hover .checkmark {
+  background-color: rgba(167, 139, 250, 0.1);
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #A78BFA;
+  border-color: #A78BFA;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Animación para la barra de progreso */
+.progress-bar {
+  transition: width 0.5s ease-in-out;
+}
+
+/* Efectos de glassmorphism mejorados */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: all 0.3s ease;
+}
+
+.glassmorphism:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.4);
+  border-color: rgba(167, 139, 250, 0.3);
+}
+
+/* Efectos especiales para los iconos de los pasos */
+/* Estilos premium para los íconos de los pasos */
+.step-icon-container {
+  transition: all 0.3s ease;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 2px solid var(--glass-border);
+  box-shadow: var(--shadow-medium);
+}
+
+.step-icon-container:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-strong);
+  border-color: rgba(167, 139, 250, 0.3);
+}
+
+/* Íconos SVG con tamaño fijo y consistente */
+.step-icon-svg {
+  width: 2rem; /* w-8 */
+  height: 2rem; /* h-8 */
+  transition: all 0.3s ease;
+}
+
+.step-icon-svg:hover {
+  transform: scale(1.1);
+}
+
+/* Números de paso */
+.step-number {
+  transition: all 0.3s ease;
+  background: var(--gradient-primary);
+  box-shadow: var(--shadow-soft);
+}
+
+.step-number:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Colores específicos para cada ícono */
+.icon-lilac {
+  color: var(--lilac);
+}
+
+.icon-pink {
+  color: var(--pink);
+}
+
+.icon-mint {
+  color: var(--mint);
+}
+
+/* Animaciones para los paneles laterales */
+.side-panel {
+  animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animaciones para los iconos */
+.icon-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Estilos para el área de subida de archivos */
+.file-upload-area {
+  transition: all 0.3s ease;
+  border: 2px dashed #A78BFA;
+  background: rgba(167, 139, 250, 0.05);
+}
+
+.file-upload-area:hover {
+  border-color: #F9A8D4;
+  background: rgba(249, 168, 212, 0.1);
+  transform: scale(1.02);
+}
+
+.file-upload-area.dragover {
+  border-color: #86EFAC;
+  background: rgba(134, 239, 172, 0.1);
+  transform: scale(1.05);
+}
+
+/* Responsive design premium - Mobile First */
+@media (max-width: 640px) {
+  /* Hero section mobile */
+  .hero-mobile {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-title-mobile {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  
+  .hero-subtitle-mobile {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  
+  /* Íconos mobile - más pequeños y centrados */
+  .step-icon-container {
+    width: 4rem; /* w-16 */
+    height: 4rem; /* h-16 */
+  }
+  
+  .step-icon-svg {
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+  }
+  
+  .step-number {
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+    font-size: 0.75rem; /* text-xs */
+  }
+  
+  /* Formulario mobile */
+  .form-step {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+  }
+  
+  .glassmorphism {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Inputs mobile */
+  .form-input-mobile {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+  }
+  
+  /* Botones mobile */
+  .btn-mobile {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+  }
+  
+  /* Grid mobile */
+  .grid-mobile {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  /* Espaciado mobile */
+  .section-mobile {
+    padding: 3rem 1rem;
+  }
+  
+  /* Footer mobile */
+  .footer-mobile {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .footer-mobile .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablet styles */
+  .hero-tablet {
+    padding: 4rem 2rem;
+  }
+  
+  .form-container-tablet {
+    max-width: 600px;
+  }
+  
+  .grid-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Desktop styles */
+  .hero-desktop {
+    padding: 6rem 2rem;
+  }
+  
+  .form-container-desktop {
+    max-width: 800px;
+  }
+  
+  .grid-desktop {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* Mejoras de accesibilidad mobile */
+@media (max-width: 768px) {
+  /* Aumentar tamaño de toque para botones */
+  .btn-mobile {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  /* Mejorar contraste en mobile */
+  .text-mobile {
+    color: #1F2937;
+    font-weight: 500;
+  }
+  
+  /* Espaciado optimizado para mobile */
+  .space-mobile > * + * {
+    margin-top: 1.5rem;
+  }
+  
+  /* Inputs más grandes en mobile */
+  input, textarea, select {
+    font-size: 16px; /* Previene zoom en iOS */
+    padding: 1rem;
+  }
+}
+
+/* Animaciones optimizadas para mobile */
+@media (max-width: 768px) {
+  .animate-float {
+    animation-duration: 8s; /* Más lento en mobile */
+  }
+  
+  .hover-lift:hover {
+    transform: none; /* Desactivar hover en mobile */
+  }
+  
+  .hover-glow:hover {
+    box-shadow: none; /* Desactivar glow en mobile */
+  }
+}
+
+/* Estilos para el resumen del formulario */
+.summary-card {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1) 0%, rgba(249, 168, 212, 0.1) 100%);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mejoras en la accesibilidad */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.5);
+}
+
+/* Estilos para los mensajes de validación */
+.validation-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Estilos para los tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.875rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

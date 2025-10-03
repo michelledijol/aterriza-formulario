@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS de Aterriza */
+:root {
+  --ink: #141414;
+  --muted: #6B7280;
+  --lilac: #A78BFA;
+  --pink: #F9A8D4;
+  --mint: #86EFAC;
+  --radius: 16px;
+  --gap: clamp(12px, 2.4vw, 20px);
+  --pad: clamp(16px, 3.2vw, 28px);
+  --shadow: 0 10px 30px rgba(16, 24, 40, 0.12);
+  --shadow-hover: 0 8px 20px rgba(16, 24, 40, 0.12);
+}
+
+/* Estilos base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: linear-gradient(135deg, #fef3c7 0%, #fce7f3 25%, #ddd6fe 50%, #bfdbfe 75%, #ccfbf1 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilidades personalizadas */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #9333ea, #ec4899);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
