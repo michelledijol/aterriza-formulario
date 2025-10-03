@@ -1198,12 +1198,14 @@ function App() {
                     overflow: 'hidden'
                   }}
                   onMouseOver={(e) => {
-                    e.target.style.transform = 'translateY(-3px)';
-                    e.target.style.boxShadow = '0 12px 35px rgba(59, 130, 246, 0.4)';
+                    const target = e.target as HTMLButtonElement;
+                    target.style.transform = 'translateY(-3px)';
+                    target.style.boxShadow = '0 12px 35px rgba(59, 130, 246, 0.4)';
                   }}
                   onMouseOut={(e) => {
-                    e.target.style.transform = 'translateY(0)';
-                    e.target.style.boxShadow = '0 8px 25px rgba(59, 130, 246, 0.3)';
+                    const target = e.target as HTMLButtonElement;
+                    target.style.transform = 'translateY(0)';
+                    target.style.boxShadow = '0 8px 25px rgba(59, 130, 246, 0.3)';
                   }}
                 >
                   Siguiente →
@@ -1227,12 +1229,14 @@ function App() {
                     overflow: 'hidden'
                   }}
                   onMouseOver={(e) => {
-                    e.target.style.transform = 'translateY(-3px)';
-                    e.target.style.boxShadow = '0 12px 35px rgba(16, 185, 129, 0.4)';
+                    const target = e.target as HTMLButtonElement;
+                    target.style.transform = 'translateY(-3px)';
+                    target.style.boxShadow = '0 12px 35px rgba(16, 185, 129, 0.4)';
                   }}
                   onMouseOut={(e) => {
-                    e.target.style.transform = 'translateY(0)';
-                    e.target.style.boxShadow = '0 8px 25px rgba(16, 185, 129, 0.3)';
+                    const target = e.target as HTMLButtonElement;
+                    target.style.transform = 'translateY(0)';
+                    target.style.boxShadow = '0 8px 25px rgba(16, 185, 129, 0.3)';
                   }}
                 >
                   Enviar Formulario
